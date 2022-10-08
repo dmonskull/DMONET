@@ -1,0 +1,23 @@
+games
+COD Black Ops III
+Call of Duty Black Ops II
+Call of Duty Black Ops
+Advanced Warfare
+Call of Duty Ghosts
+Call of Duty Modern Warfare 3
+Modern Warfare 2
+GTA V Play
+GTA San Andreas
+resident evil 4
+Rise of the Tomb Raider
+Battlefield 3 Disc 1
+DARK SOULS II
+Skate 3
+Halo 3
+Halo Reach
+Saints Row
+
+
+
+"games" = YOUR games folder name (example: )
+Replace all names with your own game names for Quick Launch to work properly!!!
