@@ -260,18 +260,8 @@ C:\MODDING\DMONET\DMONET\bin\Debug\DevExpress.XtraBars.v20.1.dll
 C:\MODDING\DMONET\DMONET\bin\Debug\DevExpress.XtraEditors.v20.1.dll
 C:\MODDING\DMONET\DMONET\bin\Debug\DevExpress.Printing.v20.1.Core.dll
 C:\MODDING\DMONET\DMONET\bin\Debug\DevExpress.Sparkline.v20.1.Core.dll
-C:\MODDING\DMONET\DMONET\bin\Debug\Google.Protobuf.dll
-C:\MODDING\DMONET\DMONET\bin\Debug\ZstdNet.dll
-C:\MODDING\DMONET\DMONET\bin\Debug\K4os.Compression.LZ4.Streams.dll
-C:\MODDING\DMONET\DMONET\bin\Debug\BouncyCastle.Crypto.dll
-C:\MODDING\DMONET\DMONET\bin\Debug\Ubiety.Dns.Core.dll
 C:\MODDING\DMONET\DMONET\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
 C:\MODDING\DMONET\DMONET\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
-C:\MODDING\DMONET\DMONET\bin\Debug\System.Memory.dll
-C:\MODDING\DMONET\DMONET\bin\Debug\System.Buffers.dll
-C:\MODDING\DMONET\DMONET\bin\Debug\K4os.Compression.LZ4.dll
-C:\MODDING\DMONET\DMONET\bin\Debug\K4os.Hash.xxHash.dll
-C:\MODDING\DMONET\DMONET\bin\Debug\System.Numerics.Vectors.dll
 C:\MODDING\DMONET\DMONET\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
 C:\MODDING\DMONET\DMONET\bin\Debug\DevExpress.Data.v20.1.xml
 C:\MODDING\DMONET\DMONET\bin\Debug\DevExpress.Utils.v20.1.xml
@@ -310,7 +300,6 @@ C:\MODDING\DMONET\DMONET\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
 C:\MODDING\DMONET\DMONET\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
 C:\MODDING\DMONET\DMONET\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
 C:\MODDING\DMONET\DMONET\obj\Debug\DMONET.csproj.AssemblyReference.cache
-C:\MODDING\DMONET\DMONET\obj\Debug\DMONET.exe.config
 C:\MODDING\DMONET\DMONET\obj\Debug\DMONET.BO2.resources
 C:\MODDING\DMONET\DMONET\obj\Debug\DMONET.DS2.resources
 C:\MODDING\DMONET\DMONET\obj\Debug\DMONET.Form1.resources
