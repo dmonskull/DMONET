@@ -73,6 +73,7 @@ namespace DMONET
             this.textEdit2.Properties.UseSystemPasswordChar = true;
             this.textEdit2.Size = new System.Drawing.Size(201, 20);
             this.textEdit2.TabIndex = 2;
+            this.textEdit2.Visible = false;
             // 
             // simpleButton1
             // 
@@ -89,11 +90,11 @@ namespace DMONET
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.AppearanceHovered.ForeColor = System.Drawing.Color.Red;
             this.labelControl1.AppearanceHovered.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(59, 263);
+            this.labelControl1.Location = new System.Drawing.Point(89, 263);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(162, 13);
+            this.labelControl1.Size = new System.Drawing.Size(102, 13);
             this.labelControl1.TabIndex = 5;
-            this.labelControl1.Text = "Join DMONET Discord to Purchase";
+            this.labelControl1.Text = "Join DMONET Discord";
             this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // LoginForm
