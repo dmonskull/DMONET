@@ -31,7 +31,7 @@ namespace DMONET
                 {
 
                     barHeaderItem1.Caption = "ACTIVE";
-                    MessageBox.Show("Re-connected to Tool :)", "StrawberryNet");
+                    MessageBox.Show("Re-connected to Tool :)", "DMONET");
 
                 }
 
@@ -42,7 +42,7 @@ namespace DMONET
             }
             catch (Exception)
             {
-                MessageBox.Show("Error Re-Connecting to Console", "StrawberryNet");
+                MessageBox.Show("Error Re-Connecting to Console", "DMONET");
             }
         }
 
@@ -56,7 +56,7 @@ namespace DMONET
 
                     barHeaderItem1.Caption = "ACTIVE";
                     barHeaderItem1.Appearance.ForeColor = Color.Green;
-                    MessageBox.Show("Connection Still Active", "StrawberryNet");
+                    MessageBox.Show("Connection Still Active", "DMONET");
 
                 }
 
@@ -68,7 +68,7 @@ namespace DMONET
             }
             catch (Exception)
             {
-                MessageBox.Show("Error Connecting to Console", "StrawberryNet");
+                MessageBox.Show("Error Connecting to Console", "DMONET");
             }
         }
 

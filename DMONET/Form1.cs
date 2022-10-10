@@ -130,14 +130,14 @@ namespace DMONET
                 if (JRPC.activeConnection == true)
                 {
                     JRPC.RebootConsole();
-                    MessageBox.Show("Rebooting Console Now", "StrawberryNet");
+                    MessageBox.Show("Rebooting Console Now", "DMONET");
                 }
             }
             catch (Exception)
             {
                 JRPC.Connect();
                 JRPC.RebootConsole();
-                MessageBox.Show("Rebooting Console Now", "StrawberryNet");
+                MessageBox.Show("Rebooting Console Now", "DMONET");
             }
         }
 
@@ -424,6 +424,12 @@ namespace DMONET
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void tileItem12_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            RE4 re4HD = new RE4();
+            re4HD.Show();
         }
     }
 }

@@ -317,3 +317,4 @@ C:\MODDING\DMONET\DMONET\obj\Debug\DMONET.csproj.CoreCompileInputs.cache
 C:\MODDING\DMONET\DMONET\obj\Debug\DMONET.csproj.CopyComplete
 C:\MODDING\DMONET\DMONET\obj\Debug\DMONET.exe
 C:\MODDING\DMONET\DMONET\obj\Debug\DMONET.pdb
+C:\MODDING\DMONET\DMONET\obj\Debug\DMONET.RE4.resources

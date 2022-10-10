@@ -1,0 +1,163 @@
+﻿using DevExpress.XtraBars;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using JRPC_Client;
+using XDevkit;
+
+namespace DMONET
+{
+    public partial class RE4 : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
+    {
+        JRPC JRPC = new JRPC();
+        public RE4()
+        {
+            InitializeComponent();
+        }
+        private void RE4_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                JRPC.Connect();
+                if (JRPC.activeConnection == true)
+                {
+
+                    barHeaderItem1.Caption = "ACTIVE";
+                    barHeaderItem1.Appearance.ForeColor = Color.Green;
+                    MessageBox.Show("Connection Still Active", "DMONET");
+
+                }
+
+                else
+                {
+                    barHeaderItem1.Caption = "IDLE";
+                    barHeaderItem1.Appearance.ForeColor = Color.Red;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error Connecting to Console", "DMONET");
+            }
+        }
+
+        public uint SecondItemSlot = 3281685309U;
+        public uint ThirdItemSlot = 3281685367U;
+        public uint FourthItemSlot = 3281685379U;
+
+        public byte ShotgunShells = 0x18;
+        public byte MixedHerbsGRY = 0x15;
+        public byte MixedHerbsGR = 0x14;
+        public byte InfiniteLauncher = 0x6D;
+        public byte PRL412 = 0x41;
+        public byte ChicagoTypewriter = 0x34;
+        public byte Handcannon = 0x37;
+        public byte CombatKnife = 0x38;
+
+
+        private void accordionControlElement2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                JRPC.Connect();
+                if (JRPC.activeConnection == true)
+                {
+                    barHeaderItem1.Appearance.ForeColor = Color.Green;
+                    barHeaderItem1.Caption = "ACTIVE";
+                    MessageBox.Show("Re-connected to Tool :)", "DMONET");
+                }
+
+                else
+                {
+                    barHeaderItem1.Caption = "IDLE";
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error Re-Connecting to Console", "DMONET");
+            }
+        }
+
+        private void accordionControlElement4_Click(object sender, EventArgs e)
+        {
+            string a;
+            a = Application.StartupPath + "\\RE4ScreenShot.png";
+            JRPC.xbConsole.ScreenShot(a);
+            System.Diagnostics.Process.Start(Application.StartupPath + "\\RE4ScreenShot.png");
+        }
+
+        private void accordionControlElement7_Click(object sender, EventArgs e)
+        {
+            panelControl1.Visible = true;
+        }
+
+        private void accordionControlElement6_Click(object sender, EventArgs e)
+        {
+            string Dir;
+            Dir = JRPC.xbConsole.DebugTarget.RunningProcessInfo.ProgramName;
+            var xexPath = @"Hdd:\" + Dir;
+            JRPC.xbConsole.Reboot(xexPath, xexPath.Substring(0, xexPath.LastIndexOf(@"\", StringComparison.Ordinal)), null, XboxRebootFlags.Title);
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            if (comboBoxEdit1.Text == "Shotgun Shells")
+            {
+                JRPC.SetMemory(SecondItemSlot, new byte[]{ShotgunShells});
+            }
+            if (comboBoxEdit1.Text == "Mixed Herbs (G+R+Y)")
+            {
+                JRPC.SetMemory(SecondItemSlot, new byte[]{MixedHerbsGRY});
+            }
+            if (comboBoxEdit1.Text == "Infinite Launcher")
+            {
+                JRPC.SetMemory(SecondItemSlot, new byte[]{InfiniteLauncher});
+            }
+            if (comboBoxEdit1.Text == "P.R.L 412")
+            {
+                JRPC.SetMemory(SecondItemSlot, new byte[]{PRL412});
+            }
+            if (comboBoxEdit1.Text == "Chicago Typewriter")
+            {
+                JRPC.SetMemory(SecondItemSlot, new byte[] { ChicagoTypewriter });
+            }
+            if (comboBoxEdit1.Text == "Combat Knife")
+            {
+                JRPC.SetMemory(SecondItemSlot, new byte[] { CombatKnife });
+            }
+            if (comboBoxEdit1.Text == "Handcannon")
+            {
+                JRPC.SetMemory(SecondItemSlot, new byte[] { Handcannon });
+            }
+
+        }
+
+
+        public bool PTAS;
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            if (!PTAS)
+            {
+                simpleButton2.ForeColor = Color.Green;
+                JRPC.SetMemory(0xC265D848, new byte[]
+                {
+                0x0F, 0xFF, 0xFF, 0xFF
+                });
+            }
+            else
+            {
+                simpleButton2.ForeColor = Color.Red;
+                JRPC.SetMemory(0xC265D848, new byte[]
+                {
+                0x00, 0x00, 0x00, 0x00
+                });
+            }
+            PTAS = !PTAS;
+
+        }
+    }
+}

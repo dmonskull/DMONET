@@ -33,7 +33,7 @@ namespace DMONET
 
                     barHeaderItem1.Caption = "ACTIVE";
                     barHeaderItem1.Appearance.ForeColor = Color.Green;
-                    MessageBox.Show("Connection Still Active", "StrawberryNet");
+                    MessageBox.Show("Connection Still Active", "DMONET");
 
                 }
 
@@ -45,7 +45,7 @@ namespace DMONET
             }
             catch (Exception)
             {
-                MessageBox.Show("Error Connecting to Console", "StrawberryNet");
+                MessageBox.Show("Error Connecting to Console", "DMONET");
             }
         }
 
