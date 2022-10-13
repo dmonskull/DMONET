@@ -63,6 +63,13 @@ namespace DMONET
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
+            SplashScreenManager.ShowForm(this, typeof(waitform), true, true, false); // this is useless, but it makes you an enjoyer :)
+            SplashScreenManager.Default.SetWaitFormCaption("DMONET Enjoyer:  " + textEdit1.Text);
+            for (int i = 0; i < 100; i++)
+            {
+                Thread.Sleep(10);
+            }
+            SplashScreenManager.CloseForm(); // useless till here
             Form1 Dash = new Form1(textEdit1.Text);
             Hide();
             Dash.Show();

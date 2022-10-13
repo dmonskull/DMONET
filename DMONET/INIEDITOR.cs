@@ -33,7 +33,7 @@ namespace DMONET
 
                     barHeaderItem1.Caption = "ACTIVE";
                     barHeaderItem1.Appearance.ForeColor = Color.Green;
-                    MessageBox.Show("Connection Still Active", "DMONET");
+                    MessageBox.Show("Connection Active", "DMONET");
 
                 }
 

@@ -29,7 +29,7 @@ namespace DMONET
 
                     barHeaderItem1.Caption = "ACTIVE";
                     barHeaderItem1.Appearance.ForeColor = Color.Green;
-                    MessageBox.Show("Connection Still Active", "DMONET");
+                    MessageBox.Show("Connection Active", "DMONET");
 
                 }
 
@@ -46,8 +46,13 @@ namespace DMONET
         }
 
         public uint SecondItemSlot = 3281685309U;
+        public uint SecondItemSlotAmount = 3281685311U;
         public uint ThirdItemSlot = 3281685367U;
+        public uint ThirdItemSlotAmount = 3281685367U;
         public uint FourthItemSlot = 3281685379U;
+
+        public uint FirstAidSlotAmount = 3281685325U;
+        public uint FirstAidSlot = 3281685323U;
 
         public byte ShotgunShells = 0x18;
         public byte MixedHerbsGRY = 0x15;
@@ -57,7 +62,10 @@ namespace DMONET
         public byte ChicagoTypewriter = 0x34;
         public byte Handcannon = 0x37;
         public byte CombatKnife = 0x38;
-
+        public byte Shotgun = 0x47;
+        public byte RocketLauncherSpecial = 0x17;
+        public byte MineThrower = 0x36;
+        public byte RifleSemiInfaScope = 0x51;
 
         private void accordionControlElement2_Click(object sender, EventArgs e)
         {
@@ -133,7 +141,23 @@ namespace DMONET
             {
                 JRPC.SetMemory(SecondItemSlot, new byte[] { Handcannon });
             }
-
+            if (comboBoxEdit1.Text == "Shotgun")
+            {
+                JRPC.SetMemory(SecondItemSlot, new byte[] { Shotgun });
+            }
+            if (comboBoxEdit1.Text == "Rocket Launcher Special")
+            {
+                JRPC.SetMemory(SecondItemSlot, new byte[] { RocketLauncherSpecial });
+            }
+            if (comboBoxEdit1.Text == "Mine Thrower")
+            {
+                JRPC.SetMemory(SecondItemSlot, new byte[] { MineThrower });
+            }
+            if (comboBoxEdit1.Text == "Rifle (semi auto) with Infared Scope")
+            {
+                JRPC.SetMemory(SecondItemSlot, new byte[] { RifleSemiInfaScope });
+            }
+            JRPC.SetMemory(SecondItemSlotAmount, BitConverter.GetBytes((uint)this.numericUpDown2.Value));
         }
 
 
@@ -158,6 +182,104 @@ namespace DMONET
             }
             PTAS = !PTAS;
 
+        }
+
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            if (comboBoxEdit3.Text == "Shotgun Shells")
+            {
+                JRPC.SetMemory(FirstAidSlot, new byte[] { ShotgunShells });
+            }
+            if (comboBoxEdit3.Text == "Mixed Herbs (G+R+Y)")
+            {
+                JRPC.SetMemory(FirstAidSlot, new byte[] { MixedHerbsGRY });
+            }
+            if (comboBoxEdit3.Text == "Infinite Launcher")
+            {
+                JRPC.SetMemory(FirstAidSlot, new byte[] { InfiniteLauncher });
+            }
+            if (comboBoxEdit3.Text == "P.R.L 412")
+            {
+                JRPC.SetMemory(FirstAidSlot, new byte[] { PRL412 });
+            }
+            if (comboBoxEdit3.Text == "Chicago Typewriter")
+            {
+                JRPC.SetMemory(FirstAidSlot, new byte[] { ChicagoTypewriter });
+            }
+            if (comboBoxEdit3.Text == "Combat Knife")
+            {
+                JRPC.SetMemory(FirstAidSlot, new byte[] { CombatKnife });
+            }
+            if (comboBoxEdit3.Text == "Handcannon")
+            {
+                JRPC.SetMemory(FirstAidSlot, new byte[] { Handcannon });
+            }
+            if (comboBoxEdit3.Text == "Shotgun")
+            {
+                JRPC.SetMemory(FirstAidSlot, new byte[] { Shotgun });
+            }
+            if (comboBoxEdit3.Text == "Rocket Launcher Special")
+            {
+                JRPC.SetMemory(FirstAidSlot, new byte[] { RocketLauncherSpecial });
+            }
+            if (comboBoxEdit3.Text == "Mine Thrower")
+            {
+                JRPC.SetMemory(FirstAidSlot, new byte[] { MineThrower });
+            }
+            if (comboBoxEdit3.Text == "Rifle (semi auto) with Infared Scope")
+            {
+                JRPC.SetMemory(FirstAidSlot, new byte[] { RifleSemiInfaScope });
+            }
+            JRPC.SetMemory(FirstAidSlotAmount, BitConverter.GetBytes((uint)this.numericUpDown3.Value));
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            if (comboBoxEdit2.Text == "Shotgun Shells")
+            {
+                JRPC.SetMemory(ThirdItemSlot, new byte[] { ShotgunShells });
+            }
+            if (comboBoxEdit2.Text == "Mixed Herbs (G+R+Y)")
+            {
+                JRPC.SetMemory(ThirdItemSlot, new byte[] { MixedHerbsGRY });
+            }
+            if (comboBoxEdit2.Text == "Infinite Launcher")
+            {
+                JRPC.SetMemory(ThirdItemSlot, new byte[] { InfiniteLauncher });
+            }
+            if (comboBoxEdit2.Text == "P.R.L 412")
+            {
+                JRPC.SetMemory(ThirdItemSlot, new byte[] { PRL412 });
+            }
+            if (comboBoxEdit2.Text == "Chicago Typewriter")
+            {
+                JRPC.SetMemory(ThirdItemSlot, new byte[] { ChicagoTypewriter });
+            }
+            if (comboBoxEdit2.Text == "Combat Knife")
+            {
+                JRPC.SetMemory(ThirdItemSlot, new byte[] { CombatKnife });
+            }
+            if (comboBoxEdit2.Text == "Handcannon")
+            {
+                JRPC.SetMemory(ThirdItemSlot, new byte[] { Handcannon });
+            }
+            if (comboBoxEdit2.Text == "Shotgun")
+            {
+                JRPC.SetMemory(ThirdItemSlot, new byte[] { Shotgun });
+            }
+            if (comboBoxEdit2.Text == "Rocket Launcher Special")
+            {
+                JRPC.SetMemory(ThirdItemSlot, new byte[] { RocketLauncherSpecial });
+            }
+            if (comboBoxEdit2.Text == "Mine Thrower")
+            {
+                JRPC.SetMemory(ThirdItemSlot, new byte[] { MineThrower });
+            }
+            if (comboBoxEdit2.Text == "Rifle (semi auto) with Infared Scope")
+            {
+                JRPC.SetMemory(ThirdItemSlot, new byte[] { RifleSemiInfaScope });
+            }
+            JRPC.SetMemory(ThirdItemSlotAmount, BitConverter.GetBytes((uint)this.numericUpDown1.Value));
         }
     }
 }

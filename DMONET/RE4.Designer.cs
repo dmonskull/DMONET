@@ -32,6 +32,7 @@ namespace DMONET
             this.components = new System.ComponentModel.Container();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
@@ -48,7 +49,15 @@ namespace DMONET
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.comboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -58,6 +67,11 @@ namespace DMONET
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
@@ -80,21 +94,39 @@ namespace DMONET
             this.panelControl1.Size = new System.Drawing.Size(582, 498);
             this.panelControl1.TabIndex = 4;
             // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Location = new System.Drawing.Point(466, 47);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(104, 23);
+            this.simpleButton2.TabIndex = 1;
+            this.simpleButton2.Text = "99999999 PTAS";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.comboBoxEdit3);
+            this.groupControl1.Controls.Add(this.labelControl3);
+            this.groupControl1.Controls.Add(this.simpleButton4);
+            this.groupControl1.Controls.Add(this.numericUpDown3);
+            this.groupControl1.Controls.Add(this.comboBoxEdit2);
+            this.groupControl1.Controls.Add(this.labelControl2);
+            this.groupControl1.Controls.Add(this.numericUpDown2);
+            this.groupControl1.Controls.Add(this.simpleButton3);
+            this.groupControl1.Controls.Add(this.numericUpDown1);
             this.groupControl1.Controls.Add(this.comboBoxEdit1);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.simpleButton1);
             this.groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.groupControl1.Location = new System.Drawing.Point(5, 6);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(255, 324);
+            this.groupControl1.Size = new System.Drawing.Size(320, 324);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Inventory Editor";
             // 
             // comboBoxEdit1
             // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(5, 44);
+            this.comboBoxEdit1.Location = new System.Drawing.Point(5, 82);
             this.comboBoxEdit1.MenuManager = this.fluentFormDefaultManager1;
             this.comboBoxEdit1.Name = "comboBoxEdit1";
             this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -105,10 +137,14 @@ namespace DMONET
             "Chicago Typewriter",
             "Handcannon",
             "Combat Knife",
+            "Shotgun",
+            "Rocket Launcher Special",
+            "Mine Thrower",
+            "Rifle (semi auto) with Infared Scope",
             "Shotgun Shells",
             "Mixed Herbs (G+R+Y)",
             "Mixed Herbs (G+R)"});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(136, 20);
+            this.comboBoxEdit1.Size = new System.Drawing.Size(164, 20);
             this.comboBoxEdit1.TabIndex = 2;
             // 
             // fluentFormDefaultManager1
@@ -136,7 +172,7 @@ namespace DMONET
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(5, 25);
+            this.labelControl1.Location = new System.Drawing.Point(5, 63);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(52, 13);
             this.labelControl1.TabIndex = 1;
@@ -144,7 +180,7 @@ namespace DMONET
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(147, 41);
+            this.simpleButton1.Location = new System.Drawing.Point(237, 80);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(75, 23);
             this.simpleButton1.TabIndex = 0;
@@ -234,14 +270,106 @@ namespace DMONET
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem1);
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barHeaderItem1);
             // 
-            // simpleButton2
+            // numericUpDown1
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(266, 21);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(104, 23);
-            this.simpleButton2.TabIndex = 1;
-            this.simpleButton2.Text = "99999999 PTAS";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            this.numericUpDown1.Location = new System.Drawing.Point(175, 126);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(56, 21);
+            this.numericUpDown1.TabIndex = 3;
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Location = new System.Drawing.Point(237, 124);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton3.TabIndex = 4;
+            this.simpleButton3.Text = "Send";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(175, 82);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(56, 21);
+            this.numericUpDown2.TabIndex = 5;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(5, 108);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(52, 13);
+            this.labelControl2.TabIndex = 6;
+            this.labelControl2.Text = "Item Slot 3";
+            // 
+            // comboBoxEdit2
+            // 
+            this.comboBoxEdit2.Location = new System.Drawing.Point(5, 127);
+            this.comboBoxEdit2.MenuManager = this.fluentFormDefaultManager1;
+            this.comboBoxEdit2.Name = "comboBoxEdit2";
+            this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit2.Properties.Items.AddRange(new object[] {
+            "P.R.L 412",
+            "Infinite Launcher",
+            "Chicago Typewriter",
+            "Handcannon",
+            "Combat Knife",
+            "Shotgun",
+            "Rocket Launcher Special",
+            "Mine Thrower",
+            "Rifle (semi auto) with Infared Scope",
+            "Shotgun Shells",
+            "Mixed Herbs (G+R+Y)",
+            "Mixed Herbs (G+R)"});
+            this.comboBoxEdit2.Size = new System.Drawing.Size(164, 20);
+            this.comboBoxEdit2.TabIndex = 7;
+            // 
+            // comboBoxEdit3
+            // 
+            this.comboBoxEdit3.Location = new System.Drawing.Point(5, 38);
+            this.comboBoxEdit3.MenuManager = this.fluentFormDefaultManager1;
+            this.comboBoxEdit3.Name = "comboBoxEdit3";
+            this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit3.Properties.Items.AddRange(new object[] {
+            "P.R.L 412",
+            "Infinite Launcher",
+            "Chicago Typewriter",
+            "Handcannon",
+            "Combat Knife",
+            "Shotgun",
+            "Rocket Launcher Special",
+            "Mine Thrower",
+            "Rifle (semi auto) with Infared Scope",
+            "Shotgun Shells",
+            "Mixed Herbs (G+R+Y)",
+            "Mixed Herbs (G+R)"});
+            this.comboBoxEdit3.Size = new System.Drawing.Size(164, 20);
+            this.comboBoxEdit3.TabIndex = 11;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(5, 19);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(52, 13);
+            this.labelControl3.TabIndex = 10;
+            this.labelControl3.Text = "Item Slot 1";
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Location = new System.Drawing.Point(237, 35);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton4.TabIndex = 9;
+            this.simpleButton4.Text = "Send";
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(175, 37);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(56, 21);
+            this.numericUpDown3.TabIndex = 8;
             // 
             // RE4
             // 
@@ -265,6 +393,11 @@ namespace DMONET
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -289,5 +422,14 @@ namespace DMONET
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit3;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
     }
 }

@@ -53,7 +53,7 @@ namespace DMONET
 
         public string message2;
 
-        public Form1(string message)
+        public Form1(string message) // this takes username from Login Form and Uses it at top right of tool and when connecting to console to display username
         {
 
 
@@ -430,6 +430,11 @@ namespace DMONET
         {
             RE4 re4HD = new RE4();
             re4HD.Show();
+        }
+
+        private void tileItem14_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+
         }
     }
 }

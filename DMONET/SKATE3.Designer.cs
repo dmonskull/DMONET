@@ -34,6 +34,8 @@ namespace DMONET
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.barStaticItem2 = new DevExpress.XtraBars.BarStaticItem();
@@ -52,7 +54,6 @@ namespace DMONET
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -63,8 +64,6 @@ namespace DMONET
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
-            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
@@ -110,8 +109,7 @@ namespace DMONET
             this.xtraTabControl1.Size = new System.Drawing.Size(512, 432);
             this.xtraTabControl1.TabIndex = 0;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage1,
-            this.xtraTabPage2});
+            this.xtraTabPage1});
             // 
             // xtraTabPage1
             // 
@@ -135,6 +133,24 @@ namespace DMONET
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(510, 407);
             this.xtraTabPage1.Text = "Page 1";
+            // 
+            // simpleButton10
+            // 
+            this.simpleButton10.Location = new System.Drawing.Point(379, 388);
+            this.simpleButton10.Name = "simpleButton10";
+            this.simpleButton10.Size = new System.Drawing.Size(125, 16);
+            this.simpleButton10.TabIndex = 16;
+            this.simpleButton10.Text = "Reset";
+            this.simpleButton10.Click += new System.EventHandler(this.simpleButton10_Click);
+            // 
+            // simpleButton9
+            // 
+            this.simpleButton9.Location = new System.Drawing.Point(14, 47);
+            this.simpleButton9.Name = "simpleButton9";
+            this.simpleButton9.Size = new System.Drawing.Size(125, 23);
+            this.simpleButton9.TabIndex = 15;
+            this.simpleButton9.Text = "FLIP MOD";
+            this.simpleButton9.Click += new System.EventHandler(this.simpleButton9_Click);
             // 
             // textEdit7
             // 
@@ -296,12 +312,6 @@ namespace DMONET
             this.simpleButton1.Text = "REVERSE TIME";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // xtraTabPage2
-            // 
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(510, 407);
-            this.xtraTabPage2.Text = "Page 2";
-            // 
             // accordionControl1
             // 
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -391,24 +401,6 @@ namespace DMONET
             this.barStaticItem1.Id = 0;
             this.barStaticItem1.Name = "barStaticItem1";
             // 
-            // simpleButton9
-            // 
-            this.simpleButton9.Location = new System.Drawing.Point(14, 47);
-            this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.Size = new System.Drawing.Size(125, 23);
-            this.simpleButton9.TabIndex = 15;
-            this.simpleButton9.Text = "FLIP MOD";
-            this.simpleButton9.Click += new System.EventHandler(this.simpleButton9_Click);
-            // 
-            // simpleButton10
-            // 
-            this.simpleButton10.Location = new System.Drawing.Point(379, 388);
-            this.simpleButton10.Name = "simpleButton10";
-            this.simpleButton10.Size = new System.Drawing.Size(125, 16);
-            this.simpleButton10.TabIndex = 16;
-            this.simpleButton10.Text = "Reset";
-            this.simpleButton10.Click += new System.EventHandler(this.simpleButton10_Click);
-            // 
             // SKATE3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -460,7 +452,6 @@ namespace DMONET
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private DevExpress.XtraEditors.TextEdit textEdit7;
         private DevExpress.XtraEditors.SimpleButton simpleButton8;
         private DevExpress.XtraEditors.TextEdit textEdit6;
