@@ -16,7 +16,7 @@ Skate 3
 Halo 3
 Halo Reach
 Saints Row
-
+DR2 Off The Record
 
 
 "games" = YOUR games folder name (example: )

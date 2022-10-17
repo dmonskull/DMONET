@@ -157,7 +157,6 @@ namespace DMONET
             {
                 JRPC.SetMemory(SecondItemSlot, new byte[] { RifleSemiInfaScope });
             }
-            JRPC.SetMemory(SecondItemSlotAmount, BitConverter.GetBytes((uint)this.numericUpDown2.Value));
         }
 
 
@@ -230,7 +229,6 @@ namespace DMONET
             {
                 JRPC.SetMemory(FirstAidSlot, new byte[] { RifleSemiInfaScope });
             }
-            JRPC.SetMemory(FirstAidSlotAmount, BitConverter.GetBytes((uint)this.numericUpDown3.Value));
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
@@ -279,7 +277,26 @@ namespace DMONET
             {
                 JRPC.SetMemory(ThirdItemSlot, new byte[] { RifleSemiInfaScope });
             }
+        }
+
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+            JRPC.SetMemory(FirstAidSlotAmount, BitConverter.GetBytes((uint)this.numericUpDown3.Value));
+        }
+
+        private void simpleButton7_Click(object sender, EventArgs e)
+        {
+            JRPC.SetMemory(SecondItemSlotAmount, BitConverter.GetBytes((uint)this.numericUpDown2.Value));
+        }
+
+        private void simpleButton6_Click(object sender, EventArgs e)
+        {
             JRPC.SetMemory(ThirdItemSlotAmount, BitConverter.GetBytes((uint)this.numericUpDown1.Value));
+        }
+
+        private void simpleButton8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

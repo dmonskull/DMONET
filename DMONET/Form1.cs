@@ -37,6 +37,7 @@ namespace DMONET
         public string Halo3 = ReadSpecificLine(AppDomain.CurrentDomain.BaseDirectory + "important.txt", 16);
         public string haloReach = ReadSpecificLine(AppDomain.CurrentDomain.BaseDirectory + "important.txt", 17);
         public string SaintsRow = ReadSpecificLine(AppDomain.CurrentDomain.BaseDirectory + "important.txt", 18);
+        public string DeadRising2OTF = ReadSpecificLine(AppDomain.CurrentDomain.BaseDirectory + "important.txt", 19);
         public string bF3 = ReadSpecificLine(AppDomain.CurrentDomain.BaseDirectory + "important.txt", 13);
         public string Bo3 = ReadSpecificLine(AppDomain.CurrentDomain.BaseDirectory + "important.txt", 2);
         public string Bo2 = ReadSpecificLine(AppDomain.CurrentDomain.BaseDirectory + "important.txt", 3);
@@ -434,7 +435,20 @@ namespace DMONET
 
         private void tileItem14_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
+            DS2 ds2form = new DS2();
+            ds2form.Show();
+        }
 
+        private void tileItem4_ItemClick_1(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            DeadRising2otf DR2OTF = new DeadRising2otf();
+            DR2OTF.Show();
+        }
+
+        private void tileItem4_RightItemClick_1(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            var xexPath = @"Hdd:\" + GameFolder + "\\" + DeadRising2OTF + "\\default.xex";
+            JRPC.xbConsole.Reboot(xexPath, xexPath.Substring(0, xexPath.LastIndexOf(@"\", StringComparison.Ordinal)), null, XboxRebootFlags.Title);
         }
     }
 }
