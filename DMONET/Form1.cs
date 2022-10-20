@@ -63,9 +63,6 @@ namespace DMONET
 
         }
 
-        public Form1()
-        {
-        }
 
 
         // Reads certain line in .txt file //
@@ -348,7 +345,9 @@ namespace DMONET
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             labelControl4.Text = "                                                                                                              " + labelControl4.Text; // this is the moving text
+            labelControl1.Text = "                                                                                                              " + new WebClient().DownloadString("https://pastebin.com/raw/QWJTgjny");
             barStaticItem2.Caption = message2;
             timer1.Enabled = true;
         }
@@ -371,6 +370,22 @@ namespace DMONET
                 }
             }
             labelControl4.Text = new string(array2);
+            char[] array3 = labelControl1.Text.ToCharArray(); // this starts the moving text
+            char[] array4 = new char[array3.Length];
+            int num4 = array3.Length;
+            int num5 = 0;
+            for (int i = 0; i < array3.Length; i++)
+            {
+                if (i + 1 < array3.Length)
+                {
+                    array4[i] = array3[i + 1];
+                }
+                else
+                {
+                    array4[num4 - 1] = array3[num5];
+                }
+            }
+            labelControl1.Text = new string(array4);
         }
 
         private void tileItem18_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
@@ -419,7 +434,27 @@ namespace DMONET
 
         private void accordionControlElement8_Click(object sender, EventArgs e)
         {
+            Byte[] buffer = { 0x0 };
+            Byte[] buffer2 = { 0x0 };
+            JRPC.GetMemory(2417350948U, 0); // reads first byte to see if Guide.MP.Purchase.xex is loaded
 
+            if (buffer[0] == buffer2[0])
+            {
+                MessageBox.Show("Guide.MP.Purchase.xex is not loaded");
+            }
+            else
+            {
+                byte[] xampatch3 = { 0x48, 0x00, 0x00, 0xC8 };
+                byte[] xampatch2 = { 0x60, 0x00, 0x00, 0x00 };
+                byte[] xampatch1 = {0x38, 0x80, 0x00, 0x05, 0x80, 0x63, 0x00, 0x1C, 0x90, 0x83, 0x00, 0x04,0x38, 0x80, 0x09, 0xC4, 0x90, 0x83, 0x00, 0x08, 0x38, 0x60, 0x00, 0x00,0x4E, 0x80, 0x00, 0x20};
+                uint memoryWrote2 = 0;
+                JRPC.xbConsole.DebugTarget.SetMemory(0x8168A6F8, 28, xampatch1, out memoryWrote2);
+                JRPC.xbConsole.DebugTarget.SetMemory(0x818E9BE4, 4, xampatch3, out memoryWrote2);
+                JRPC.xbConsole.DebugTarget.SetMemory(0x818EE414, 4, xampatch2, out memoryWrote2);
+                JRPC.xbConsole.DebugTarget.SetMemory(0x9015D860, 4, xampatch2, out memoryWrote2);
+                JRPC.xbConsole.DebugTarget.SetMemory(0x9015D924, 4, xampatch2, out memoryWrote2);
+                MessageBox.Show("Guide.MP.Purchase.xex is loaded and patched");
+            }
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -449,6 +484,23 @@ namespace DMONET
         {
             var xexPath = @"Hdd:\" + GameFolder + "\\" + DeadRising2OTF + "\\default.xex";
             JRPC.xbConsole.Reboot(xexPath, xexPath.Substring(0, xexPath.LastIndexOf(@"\", StringComparison.Ordinal)), null, XboxRebootFlags.Title);
+        }
+
+        private void accordionControlElement10_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tileItem5_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            PeekNPoke pnk = new PeekNPoke();
+            pnk.Show();
+        }
+
+        private void tileItem17_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
+        {
+            consoleInfo cInfo = new consoleInfo();
+            cInfo.Show();
         }
     }
 }

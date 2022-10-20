@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Be.Windows.Forms.HexBox, Version=1.4.7.26690, Culture=neutral, PublicKeyToken=e0e5adf0ebc99863, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Be.Windows.Forms.HexBox.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.BonusSkins.v20.1" />
     <Reference Include="DevExpress.Data.Desktop.v20.1" />
     <Reference Include="DevExpress.Data.v20.1" />
@@ -40,6 +44,9 @@
     <Reference Include="DevExpress.Utils.v20.1" />
     <Reference Include="DevExpress.XtraBars.v20.1" />
     <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Win, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\C# References\MySql.Data.dll</HintPath>
@@ -66,6 +73,12 @@
     <Compile Include="BO2.Designer.cs">
       <DependentUpon>BO2.cs</DependentUpon>
     </Compile>
+    <Compile Include="consoleInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consoleInfo.Designer.cs">
+      <DependentUpon>consoleInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="DB.cs" />
     <Compile Include="DeadRising2otf.cs">
       <SubType>Form</SubType>
@@ -73,6 +86,7 @@
     <Compile Include="DeadRising2otf.Designer.cs">
       <DependentUpon>DeadRising2otf.cs</DependentUpon>
     </Compile>
+    <Compile Include="DelegateClass.cs" />
     <Compile Include="DS2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +99,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functions.cs" />
     <Compile Include="INIEDITOR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +119,12 @@
     <Compile Include="MW2.Designer.cs">
       <DependentUpon>MW2.cs</DependentUpon>
     </Compile>
+    <Compile Include="PeekNPoke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeekNPoke.Designer.cs">
+      <DependentUpon>PeekNPoke.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickLaunchForm.cs">
@@ -118,6 +139,8 @@
     <Compile Include="RE4.Designer.cs">
       <DependentUpon>RE4.cs</DependentUpon>
     </Compile>
+    <Compile Include="RealTimeMemory.cs" />
+    <Compile Include="RWStream.cs" />
     <Compile Include="SAINTSROW.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +153,7 @@
     <Compile Include="SKATE3.Designer.cs">
       <DependentUpon>SKATE3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Types.cs" />
     <Compile Include="waitform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="BO2.resx">
       <DependentUpon>BO2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consoleInfo.resx">
+      <DependentUpon>consoleInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeadRising2otf.resx">
       <DependentUpon>DeadRising2otf.cs</DependentUpon>
@@ -156,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MW2.resx">
       <DependentUpon>MW2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeekNPoke.resx">
+      <DependentUpon>PeekNPoke.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
