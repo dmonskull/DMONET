@@ -4,30 +4,33 @@ layout: default
 
 # DMONET 3.0
 
-DMONET is an AIO Xbox 360 Modding Tool that provides a comprehensive suite of tools to enhance your modding experience.
+> **The Ultimate Xbox 360 Modding Tool**  
+> Unlock new possibilities and take your modding to the next level with DMONET 3.0!
+
+DMONET is an all-in-one Xbox 360 modding tool that provides a comprehensive suite of console and modding tools designed to enhance your experience. Whether you're a casual modder or a developer, DMONET has everything you need.
 
 ## Features
-- **Real-time modding**: Modify game data on the fly without restarting.
-- **Customizable Mods**: Create and upload custom mods for any Xbox 360 game.
-- **User-friendly Interface**: A simple UI designed for ease of use.
+- **🛠 Real-time modding**: Modify game data on the fly without restarting.
+- **🎮 User-friendly Interface**: A simple UI designed for ease of use.
+- **🔧 Devkit Support**: Full support for Xbox 360 Development Kits (XDK), allowing advanced debugging and modding capabilities.
+- **📦 Content Injecting**: Inject content directly to your Xbox 360, including mods, patches, DLC, gamesaves, profiles, and more.
+- **🚀 Custom Quicklaunching**: Set up and customize quick launch shortcuts for your favorite mods and games, speeding up access and enhancing your workflow.
 
 ---
 
-## Watch Demo Video
-
-To see DMONET 3.0 in action, check out this video:
+## 🎥 Preview Video of DMONET 3.0
 
 [![Watch the video](https://img.youtube.com/vi/C0DPdy98e4c/0.jpg)](https://www.youtube.com/watch?v=C0DPdy98e4c)
 
+Click above to watch a demo video of DMONET 3.0 in action and see how it can revolutionize your Xbox 360 experience!
+
 ---
 
-## Code Example
+## 💖 Donor List
 
-Here’s a basic JavaScript code snippet to demonstrate one of DMONET’s functionalities:
+Thank you to our amazing donors for supporting the development of DMONET 3.0! Every contribution helps me keep improving the tool. Below is our list of donors:
 
-```js
-// Sample function to set date format for DMONET.
-var setLanguage = function(lang) {
-  const dateformat = require('./lang/' + lang);
-  return dateformat;
-}
+### 🏅 Donors
+- **WebHam** - $15 - _Thank you for your incredible support!_
+
+---
