@@ -14,7 +14,7 @@ DMONET is an all-in-one Xbox 360 modding tool that provides a comprehensive suit
 - **🎮 User-friendly Interface**: A simple UI designed for ease of use.
 - **🔧 Devkit Support**: Full support for Xbox 360 Development Kits (XDK), allowing advanced debugging and modding capabilities.
 - **📦 Content Injecting**: Inject content directly to your Xbox 360, including mods, patches, DLC, gamesaves, profiles, and more.
-- **🚀 Custom Quicklaunching**: Set up and customize quick launch shortcuts for your favorite mods and games, speeding up access and enhancing your workflow.
+- **🚀 Custom and Direct Quicklaunching**: Set up and customize quick launch shortcuts for your favorite games, speeding up access and enhancing your workflow. Additionally, right-clicking on the Game Tools will allow for Direct Quicklaunching of the game associated with that tool. If a path isn't set, the tool will prompt you to set one.
 - **📂 File Explorer**: Browse and manage files on your Xbox 360 easily. Launch games by double-clicking on `.xex` files, and set custom quicklaunch entries directly from the File Explorer.
 
 ---
