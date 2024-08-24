@@ -2,37 +2,32 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
 # DMONET 3.0
 
-DMONET is a AIO Xbox 360 Modding Tool
+DMONET is an AIO Xbox 360 Modding Tool that provides a comprehensive suite of tools to enhance your modding experience.
+
+## Features
+- **Real-time modding**: Modify game data on the fly without restarting.
+- **Customizable Mods**: Create and upload custom mods for any Xbox 360 game.
+- **User-friendly Interface**: A simple UI designed for ease of use.
+
+---
+
+## Watch Demo Video
+
+To see DMONET 3.0 in action, check out this video:
+
+[![Watch the video](https://img.youtube.com/vi/YourVideoID/0.jpg)](https://www.youtube.com/watch?v=YourVideoID)
+
+---
+
+## Code Example
+
+Here’s a basic JavaScript code snippet to demonstrate one of DMONET’s functionalities:
 
 ```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
+// Sample function to set date format for DMONET.
+var setLanguage = function(lang) {
+  const dateformat = require('./lang/' + lang);
+  return dateformat;
 }
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
