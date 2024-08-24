@@ -22,8 +22,6 @@ DMONET is an all-in-one Xbox 360 modding tool that provides a comprehensive suit
 
 [![Watch the video](https://img.youtube.com/vi/C0DPdy98e4c/0.jpg)](https://www.youtube.com/watch?v=C0DPdy98e4c)
 
-Click above to watch a demo video of DMONET 3.0 in action and see how it can revolutionize your Xbox 360 experience!
-
 ---
 
 ## 💖 Donor List
