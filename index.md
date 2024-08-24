@@ -17,7 +17,7 @@ DMONET is an AIO Xbox 360 Modding Tool that provides a comprehensive suite of to
 
 To see DMONET 3.0 in action, check out this video:
 
-[![Watch the video](https://img.youtube.com/vi/YourVideoID/0.jpg)](https://www.youtube.com/watch?v=YourVideoID)
+[![Watch the video]([https://paperandinkprinting.com/wp-content/uploads/2019/08/canstockphoto22402523-arcos-creator.com_-1024x1024.jpg)]([https://www.youtube.com/watch?v=YourVideoID](https://www.youtube.com/watch?v=C0DPdy98e4c))
 
 ---
 
